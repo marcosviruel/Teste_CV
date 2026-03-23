@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nicholas Maglowsch Salgueiro - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            color: #2c3e50;
+            background: white;
+            padding: 30px 40px;
+            max-width: 850px;
+            margin: 0 auto;
+            font-size: 11pt;
+        }
+
+        header {
+            border-bottom: 2px solid #2c3e50;
+            padding-bottom: 12px;
+            margin-bottom: 18px;
+        }
+
+        h1 {
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: #1a252f;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: #546e7a;
+            margin-bottom: 6px;
+        }
+
+        .contact {
+            font-size: 11px;
+            color: #546e7a;
+        }
+
+        .contact a {
+            color: #546e7a;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 15px;
+            font-weight: 700;
+            margin-top: 16px;
+            margin-bottom: 8px;
+            color: #1a252f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .summary {
+            margin-bottom: 12px;
+            font-size: 11pt;
+            line-height: 1.5;
+        }
+
+        .skills-container {
+            margin-bottom: 12px;
+            font-size: 10.5pt;
+            line-height: 1.5;
+        }
+
+        .skills-container strong {
+            color: #1a252f;
+        }
+
+        .experience-item {
+            margin-bottom: 14px;
+        }
+
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3px;
+        }
+
+        .job-title {
+            font-size: 12pt;
+            font-weight: 600;
+            color: #1a252f;
+        }
+
+        .job-date {
+            font-size: 10pt;
+            color: #78909c;
+        }
+
+        .company {
+            font-size: 10.5pt;
+            color: #546e7a;
+            margin-bottom: 4px;
+        }
+
+        ul {
+            margin-left: 18px;
+        }
+
+        li {
+            font-size: 10.5pt;
+            margin-bottom: 3px;
+            line-height: 1.45;
+        }
+
+        .education-section {
+            display: flex;
+            justify-content: space-between;
+            font-size: 10.5pt;
+            margin-top: 6px;
+        }
+
+        .education-item {
+            flex: 1;
+        }
+
+        .education-title {
+            font-weight: 600;
+            color: #1a252f;
+        }
+
+        .education-details {
+            color: #546e7a;
+            font-size: 10pt;
+        }
+
+        @media print {
+            body {
+                padding: 20px 30px;
+            }
+
+            h2 {
+                page-break-after: avoid;
+            }
+
+            .experience-item {
+                page-break-inside: avoid;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Nicholas Maglowsch Salgueiro</h1>
+        <div class="subtitle">Senior Backend Engineer</div>
+        <div class="contact">
+            Santos, Brazil | nickmaglowsch3@gmail.com |
+            <a href="https://github.com/nickmaglowsch">github.com/nickmaglowsch</a> |
+            <a href="https://linkedin.com/in/nicholas-m-s">linkedin.com/in/nicholas-m-s</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Summary</h2>
+        <div class="summary">
+            Senior Backend Engineer with 8+ years building scalable systems and APIs serving millions of users. Expert
+            in event-driven microservices, high-performance backend systems, and AI-powered applications. Recent work:
+            AI reporting tool (70% adoption), email orchestration (300 workflows/sec), RIOT Games APIs (100K+ req/min,
+            sub-100ms latency). Stack: Java/Spring Boot, Node.js, Python, AWS, React/TypeScript.
+        </div>
+    </section>
+
+    <section>
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <strong>Backend:</strong> Java (Spring Boot), Node.js (Express, Nest.js), Python, GraphQL |
+            <strong>Frontend:</strong> React, Next.js, TypeScript |
+            <strong>Cloud:</strong> AWS (SQS, SNS, SES, EKS), GCP, Microservices |
+            <strong>Data:</strong> PostgreSQL, MySQL, MongoDB |
+            <strong>AI:</strong> Spring AI, OpenAI API, LLM Integration
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience</h2>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Software Engineer | Proximal</div>
+                <div class="job-date">Nov 2025 – Present</div>
+            </div>
+            <div class="company">Remote</div>
+            <ul>
+                <li>Built reinforcement learning environments in Python for autonomous coding agents with Claude Code
+                    SDK integration</li>
+                <li>Developed fullstack evaluation platforms (TypeScript, React, Node.js) measuring agent training
+                    performance</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Software Engineer | PartnerTap</div>
+                <div class="job-date">Oct 2023 – Nov 2025</div>
+            </div>
+            <div class="company">Remote, US</div>
+            <ul>
+                <li>Architected AI reporting platform using Spring AI/OpenAI enabling natural language report generation
+                    for SAP/Salesforce users—achieved 70% adoption, eliminated manual report creation for enterprise
+                    sales teams</li>
+                <li>Built event-driven email orchestration system on AWS (SQS, SNS, SES, EKS) handling 300 workflows/sec
+                    for co-selling partner introductions using Java 21/Spring Boot and React/Next.js</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Software Engineer | Optic Power</div>
+                <div class="job-date">Jun 2022 – Oct 2023</div>
+            </div>
+            <div class="company">Remote, US</div>
+            <ul>
+                <li>Designed high-performance public APIs for RIOT Games esports (player stats, match history) achieving
+                    sub-100ms P95 latency at 100K+ req/min using Java with immutable patterns and aggressive caching
+                </li>
+                <li>Built financial transaction platform for leads marketplace with Next.js/Nest.js on AWS maintaining
+                    99.9% uptime</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Senior Full Stack Developer | Verity</div>
+                <div class="job-date">Apr 2021 – Apr 2022</div>
+            </div>
+            <div class="company">Remote, Brazil</div>
+            <ul>
+                <li>Built enterprise health insurance platform using Java/Spring Boot and NestJS microservices with
+                    Oracle DB</li>
+                <li>Led telemedicine system serving 1M+ monthly users—architected backend (NestJS/Java) and mobile app
+                    (Angular/Ionic) enabling real-time video consultations on GCP</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Mobile Developer | MJV Technology</div>
+                <div class="job-date">Jul 2020 – Apr 2021</div>
+            </div>
+            <div class="company">Remote, Brazil</div>
+            <ul>
+                <li>Developed banking app for Bradesco Seguros using Ionic/Angular with secure financial transaction
+                    features</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="job-header">
+                <div class="job-title">Market Analyst | Jacobs Douwe Egberts</div>
+                <div class="job-date">Aug 2019 – Jul 2020</div>
+            </div>
+            <div class="company">Santos, Brazil</div>
+            <ul>
+                <li>Built automated trading tools in Node.js/Python for coffee futures market analysis and hedging
+                    strategies</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="education-section">
+            <div class="education-item">
+                <div class="education-title">AWS Certified Solutions Architect</div>
+                <div class="education-details">Amazon Web Services, 2023</div>
+            </div>
+            <div class="education-item">
+                <div class="education-title">Analysis and Systems Development</div>
+                <div class="education-details">Fatec Rubens Lara, Brazil, 2015–2018</div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
